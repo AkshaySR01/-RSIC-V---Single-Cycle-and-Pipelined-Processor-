@@ -1,0 +1,105 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Wed Nov 04 05:28:16 2026
+[*]
+[dumpfile] "C:\Users\Akshay Sharma\OneDrive\Desktop\RSIC_V_SS\Pipeline_Top.vcd"
+[dumpfile_mtime] "Wed Nov 04 05:16:21 2026"
+[dumpfile_size] 9999
+[savefile] "C:\Users\Akshay Sharma\OneDrive\Desktop\RSIC_V_SS\Pipeline.gtkw"
+[timestart] 0
+[size] 1536 889
+[pos] -1 -1
+*-6.265621 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] Pipeline_Top_TB.
+[treeopen] Pipeline_Top_TB.Pipeline_Top.
+[sst_width] 211
+[signals_width] 228
+[sst_expanded] 1
+[sst_vpaned_height] 256
+@200
+-
+@800200
+-Global Inputs
+@200
+-
+@28
+Pipeline_Top_TB.clk
+Pipeline_Top_TB.rst
+@1000200
+-Global Inputs
+@800200
+-Fetch Cycle
+@200
+-
+@28
+Pipeline_Top_TB.Pipeline_Top.Fetch_Cycle.PCSrcE
+@22
+Pipeline_Top_TB.Pipeline_Top.Fetch_Cycle.PCTargetE[31:0]
+Pipeline_Top_TB.Pipeline_Top.Fetch_Cycle.PCD[31:0]
+Pipeline_Top_TB.Pipeline_Top.Fetch_Cycle.InstrD[31:0]
+@1000200
+-Fetch Cycle
+@800200
+-Decode Cycle
+@200
+-
+@28
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.RegWriteE
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.ResultSrcE[1:0]
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.MemWriteE
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.JumpE
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.BranchE
+@22
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.ALUcontrolE[3:0]
+@28
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.ALUSrcE
+@22
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.RD1_E[31:0]
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.RD2_E[31:0]
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.PCE[31:0]
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.ImmExtE[31:0]
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.PCPlus4E[31:0]
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.RDE[4:0]
+@1000200
+-Decode Cycle
+@800200
+-Execute Cycle
+@200
+-
+@28
+Pipeline_Top_TB.Pipeline_Top.Execute_Cycle.RegWriteM
+Pipeline_Top_TB.Pipeline_Top.Execute_Cycle.MemWriteM
+@29
+Pipeline_Top_TB.Pipeline_Top.Execute_Cycle.ResultSrcM[1:0]
+@22
+Pipeline_Top_TB.Pipeline_Top.Execute_Cycle.ALUResultM[31:0]
+Pipeline_Top_TB.Pipeline_Top.Execute_Cycle.WriteDataM[31:0]
+Pipeline_Top_TB.Pipeline_Top.Execute_Cycle.PCPlus4M[31:0]
+Pipeline_Top_TB.Pipeline_Top.Execute_Cycle.RDM[4:0]
+@1000200
+-Execute Cycle
+@800200
+-Memory Cycle
+@200
+-
+@28
+Pipeline_Top_TB.Pipeline_Top.Memory_Cycle.RegWriteW
+Pipeline_Top_TB.Pipeline_Top.Memory_Cycle.ResultSrcW[1:0]
+@22
+Pipeline_Top_TB.Pipeline_Top.Memory_Cycle.ALUResultM[31:0]
+Pipeline_Top_TB.Pipeline_Top.Memory_Cycle.ReadDataW[31:0]
+Pipeline_Top_TB.Pipeline_Top.Memory_Cycle.PCPlus4W[31:0]
+Pipeline_Top_TB.Pipeline_Top.Memory_Cycle.RDW[4:0]
+@1000200
+-Memory Cycle
+@800200
+-Register WriteBack
+@28
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.RegWriteW
+@22
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.RDW[4:0]
+Pipeline_Top_TB.Pipeline_Top.Decode_Cycle.ResultW[31:0]
+@1000200
+-Register WriteBack
+[pattern_trace] 1
+[pattern_trace] 0

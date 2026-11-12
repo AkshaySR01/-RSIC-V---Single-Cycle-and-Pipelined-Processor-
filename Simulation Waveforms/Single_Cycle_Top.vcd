@@ -1,0 +1,393 @@
+$date
+	Sat Oct 31 23:32:13 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module Single_Cycle_Top_TB $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$scope module Single_Cycle_Top $end
+$var wire 1 ! clk $end
+$var wire 1 " rst $end
+$var wire 1 # Zero_DP $end
+$var wire 32 $ Result_DP [31:0] $end
+$var wire 2 % ResultSrc_DP [1:0] $end
+$var wire 1 & RegWrite_DP $end
+$var wire 32 ' ReadData_DP [31:0] $end
+$var wire 32 ( RD_Inst_DP [31:0] $end
+$var wire 32 ) RD2_DP [31:0] $end
+$var wire 32 * RD1_DP [31:0] $end
+$var wire 32 + PC_Target_DP [31:0] $end
+$var wire 32 , PC_Plus4_DP [31:0] $end
+$var wire 32 - PC_Next_DP [31:0] $end
+$var wire 32 . PC_DP [31:0] $end
+$var wire 1 / PCSrc_DP $end
+$var wire 1 0 MemWrite_DP $end
+$var wire 3 1 ImmSrc_DP [2:0] $end
+$var wire 32 2 ImmExt_DP [31:0] $end
+$var wire 32 3 ALU_Result_DP [31:0] $end
+$var wire 4 4 ALU_Control_DP [3:0] $end
+$var wire 32 5 ALU_B_DP [31:0] $end
+$var wire 1 6 ALUSrc_DP $end
+$scope module Control_Unit $end
+$var wire 7 7 OP [6:0] $end
+$var wire 3 8 func3 [2:0] $end
+$var wire 7 9 func7 [6:0] $end
+$var wire 1 / pcsrc $end
+$var wire 1 # Zero $end
+$var wire 2 : ResultSrc [1:0] $end
+$var wire 1 & RegWrite $end
+$var wire 1 0 MemWrite $end
+$var wire 1 ; Jump $end
+$var wire 3 < ImmSrc [2:0] $end
+$var wire 1 = Branch $end
+$var wire 2 > ALUop [1:0] $end
+$var wire 4 ? ALUcontrol [3:0] $end
+$var wire 1 6 ALUSrc $end
+$scope module ALU_Decoder $end
+$var wire 7 @ OP [6:0] $end
+$var wire 3 A func3 [2:0] $end
+$var wire 7 B func7 [6:0] $end
+$var wire 2 C ALUop [1:0] $end
+$var parameter 4 D ALU_ADD $end
+$var parameter 4 E ALU_AND $end
+$var parameter 4 F ALU_OR $end
+$var parameter 4 G ALU_SLL $end
+$var parameter 4 H ALU_SLT $end
+$var parameter 4 I ALU_SLTU $end
+$var parameter 4 J ALU_SRA $end
+$var parameter 4 K ALU_SRL $end
+$var parameter 4 L ALU_SUB $end
+$var parameter 4 M ALU_XOR $end
+$var reg 4 N ALUcontrol [3:0] $end
+$upscope $end
+$scope module Main_Decoder $end
+$var wire 7 O OP [6:0] $end
+$var reg 1 6 ALUSrc $end
+$var reg 2 P ALUop [1:0] $end
+$var reg 1 = Branch $end
+$var reg 3 Q ImmSrc [2:0] $end
+$var reg 1 ; Jump $end
+$var reg 1 0 MemWrite $end
+$var reg 1 & RegWrite $end
+$var reg 2 R ResultSrc [1:0] $end
+$upscope $end
+$upscope $end
+$scope module Data_Memory $end
+$var wire 1 0 WE $end
+$var wire 1 ! clk $end
+$var wire 1 " rst $end
+$var wire 32 S WriteData [31:0] $end
+$var wire 32 T ReadData [31:0] $end
+$var wire 32 U A [31:0] $end
+$upscope $end
+$scope module Instruction_Mem $end
+$var wire 1 " rst $end
+$var wire 32 V RD [31:0] $end
+$var wire 32 W A [31:0] $end
+$upscope $end
+$scope module PC $end
+$var wire 1 ! clk $end
+$var wire 1 " rst $end
+$var wire 32 X PCNext [31:0] $end
+$var reg 32 Y PC [31:0] $end
+$upscope $end
+$scope module PC_Mux $end
+$var wire 1 / PCSrc $end
+$var wire 32 Z PCTarget [31:0] $end
+$var wire 32 [ PCPlus4 [31:0] $end
+$var wire 32 \ PCNext [31:0] $end
+$upscope $end
+$scope module PC_Target $end
+$var wire 32 ] PC [31:0] $end
+$var wire 32 ^ PCTarget [31:0] $end
+$var wire 32 _ ImmExt [31:0] $end
+$upscope $end
+$scope module PC_plus4 $end
+$var wire 32 ` PC [31:0] $end
+$var wire 32 a PCPlus4 [31:0] $end
+$upscope $end
+$scope module Register_File $end
+$var wire 5 b A1 [4:0] $end
+$var wire 5 c A2 [4:0] $end
+$var wire 5 d A3 [4:0] $end
+$var wire 32 e WD3 [31:0] $end
+$var wire 1 & WE3 $end
+$var wire 1 ! clk $end
+$var wire 1 " rst $end
+$var wire 32 f RD2 [31:0] $end
+$var wire 32 g RD1 [31:0] $end
+$var integer 32 h i [31:0] $end
+$upscope $end
+$scope module Sign_Extend $end
+$var wire 3 i ImmSrc [2:0] $end
+$var wire 32 j Instr [31:0] $end
+$var reg 32 k ImmExt [31:0] $end
+$upscope $end
+$scope module alu $end
+$var wire 32 l A [31:0] $end
+$var wire 32 m B [31:0] $end
+$var wire 4 n alu_control [3:0] $end
+$var wire 1 # Z_Flag $end
+$var parameter 4 o ALU_ADD $end
+$var parameter 4 p ALU_AND $end
+$var parameter 4 q ALU_OR $end
+$var parameter 4 r ALU_SLL $end
+$var parameter 4 s ALU_SLT $end
+$var parameter 4 t ALU_SLTU $end
+$var parameter 4 u ALU_SRA $end
+$var parameter 4 v ALU_SRL $end
+$var parameter 4 w ALU_SUB $end
+$var parameter 4 x ALU_XOR $end
+$var reg 32 y alu_result [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 x
+b1 w
+b110 v
+b111 u
+b1001 t
+b1000 s
+b101 r
+b11 q
+b10 p
+b0 o
+b100 M
+b1 L
+b110 K
+b111 J
+b1001 I
+b1000 H
+b101 G
+b11 F
+b10 E
+b0 D
+$end
+#0
+$dumpvars
+b0 y
+b0 n
+b0 m
+b0 l
+b0 k
+b0 j
+b0 i
+b100000 h
+b0 g
+b0 f
+b0 e
+b0 d
+b0 c
+b0 b
+b100 a
+b0 `
+b0 _
+b0 ^
+b0 ]
+b100 \
+b100 [
+b0 Z
+b0 Y
+b100 X
+b0 W
+b0 V
+b0 U
+bx T
+b0 S
+b0 R
+b0 Q
+b0 P
+b0 O
+b0 N
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+0=
+b0 <
+0;
+b0 :
+b0 9
+b0 8
+b0 7
+06
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+00
+0/
+b0 .
+b100 -
+b100 ,
+b0 +
+b0 *
+b0 )
+b0 (
+bx '
+0&
+b0 %
+b0 $
+1#
+0"
+0!
+$end
+#50
+1!
+#100
+b11 4
+b11 ?
+b11 N
+b11 n
+b101 $
+b101 e
+b100 5
+b100 m
+0#
+b101 3
+b101 U
+b101 y
+b100 )
+b100 S
+b100 f
+b101 *
+b101 g
+b101 l
+b10 >
+b10 C
+b10 P
+1&
+b110 8
+b110 A
+b110011 7
+b110011 @
+b110011 O
+b111 d
+b110 c
+b101 b
+b110 +
+b110 Z
+b110 ^
+b110 2
+b110 _
+b110 k
+b11000101110001110110011 (
+b11000101110001110110011 V
+b11000101110001110110011 j
+0!
+1"
+#150
+b100 $
+b100 e
+b100 3
+b100 U
+b100 y
+b10 4
+b10 ?
+b10 N
+b10 n
+b111 8
+b111 A
+b1000 d
+b11000101111010000110011 (
+b11000101111010000110011 V
+b11000101111010000110011 j
+b1000 -
+b1000 X
+b1000 \
+b1010 +
+b1010 Z
+b1010 ^
+b1000 ,
+b1000 [
+b1000 a
+b100 .
+b100 W
+b100 Y
+b100 ]
+b100 `
+1!
+#200
+0!
+#250
+b0 4
+b0 ?
+b0 N
+b0 n
+bx $
+bx e
+bx 5
+bx m
+x#
+bx 3
+bx U
+bx y
+b0 >
+b0 C
+b0 P
+0&
+bx )
+bx S
+bx f
+bx *
+bx g
+bx l
+bx 9
+bx B
+bx 8
+bx A
+bx 7
+bx @
+bx O
+bx d
+bx c
+bx b
+bx 2
+bx _
+bx k
+bx (
+bx V
+bx j
+b1100 -
+b1100 X
+b1100 \
+bx +
+bx Z
+bx ^
+b1100 ,
+b1100 [
+b1100 a
+b1000 .
+b1000 W
+b1000 Y
+b1000 ]
+b1000 `
+1!
+#300
+0!
+#350
+b10000 -
+b10000 X
+b10000 \
+b10000 ,
+b10000 [
+b10000 a
+b1100 .
+b1100 W
+b1100 Y
+b1100 ]
+b1100 `
+1!
+#400
+0!
