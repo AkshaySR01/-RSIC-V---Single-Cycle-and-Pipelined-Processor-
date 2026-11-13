@@ -47,3 +47,30 @@ A load-use dependency occurs when an instruction immediately following a load in
 Since the loaded data is not available early enough for the dependent instruction's execution stage, the hazard detection unit introduces a one-cycle stall.
 Branch and jump control-flow handling is outside the currently implemented and verified feature set.
 
+### Performance
+
+#### Cycles Per Instruction (CPI)
+CPI represents the average number of clock cycles required to execute one instruction.
+
+CPI = Total Execution Cycles / Total Instructions
+_ Single-Cycle:
+CPI = 6 / 6 = 1.000
+_ Pipelined:
+CPI = 11 / 6 = 1.833
+
+#### Instructions Per Cycle (IPC)
+PC represents the average number of instructions completed per clock cycle.
+IPC = Total Instructions / Total Execution Cycles
+_ Single-Cycle:
+IPC = 6 / 6 = 1.000
+_ Pipelined:
+IPC = 6 / 11 = 0.545
+
+The higher CPI and lower IPC of the pipelined implementation in this particular benchmark are primarily attributable to pipeline startup and drain overhead.
+The benchmark contains only six instructions, making pipeline overhead relatively significant.
+However, the pipelined architecture allows multiple instructions to execute concurrently in different stages.
+Once the pipeline is filled, its ideal sustained throughput approaches one instruction per cycle, assuming no stalls.
+
+
+The CPI and IPC values presented above represent the execution efficiency of the two processor architectures for the selected instruction sequence and simulation environment. They should not be interpreted as absolute indicators of one implementation being faster than the other.
+Actual execution speed depends on additional hardware characteristics, particularly the critical path delay, maximum achievable clock frequency, and implementation-dependent timing overhead.Therefore, the results presented here are intended primarily for architectural comparison and functional evaluation rather than definitive hardware speed characterization.
