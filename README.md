@@ -11,4 +11,4 @@ The project consists of two independent implementations:
 <img width="1058" height="563" alt="SingleCycle Datapath" src="https://github.com/user-attachments/assets/f7da000c-9cb6-47c7-b5f7-95199a5b05d4" />
 
 ### Five-Stage Pipelined Architecture
-<img width="1280" height="718" alt="Pipeline Datapath" src="https://github.com/user-attachments/assets/42269421-ceb4-4c82-a8f9-ec32204c6343" />
+<img width="1229" height="620" alt="Pipeline Datapath" src="https://github.com/user-attachments/assets/e860f280-4c5a-44e1-b4c5-a40701b9c078" />
