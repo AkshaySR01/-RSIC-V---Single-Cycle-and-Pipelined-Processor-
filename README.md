@@ -51,19 +51,18 @@ Branch and jump control-flow handling is outside the currently implemented and v
 
 #### Cycles Per Instruction (CPI)
 CPI represents the average number of clock cycles required to execute one instruction.
-
 CPI = Total Execution Cycles / Total Instructions
-_ Single-Cycle:
+- Single-Cycle:
 CPI = 6 / 6 = 1.000
-_ Pipelined:
+- Pipelined:
 CPI = 11 / 6 = 1.833
 
 #### Instructions Per Cycle (IPC)
 PC represents the average number of instructions completed per clock cycle.
 IPC = Total Instructions / Total Execution Cycles
-_ Single-Cycle:
+- Single-Cycle:
 IPC = 6 / 6 = 1.000
-_ Pipelined:
+- Pipelined:
 IPC = 6 / 11 = 0.545
 
 The higher CPI and lower IPC of the pipelined implementation in this particular benchmark are primarily attributable to pipeline startup and drain overhead.
