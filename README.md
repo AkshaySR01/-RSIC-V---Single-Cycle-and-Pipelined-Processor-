@@ -9,5 +9,5 @@ Rather than implementing only a conventional single-cycle processor, this projec
 The project consists of two independent implementations:
 ### Single-Cycle Architecture
 <img width="1058" height="563" alt="SingleCycle Datapath" src="https://github.com/user-attachments/assets/f7da000c-9cb6-47c7-b5f7-95199a5b05d4" />
-### Five-Stage Pipelined Architecture:
+### Five-Stage Pipelined Architecture
 <img width="1280" height="718" alt="Pipeline Datapath" src="https://github.com/user-attachments/assets/42269421-ceb4-4c82-a8f9-ec32204c6343" />
