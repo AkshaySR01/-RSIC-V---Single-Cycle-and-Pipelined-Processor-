@@ -65,6 +65,8 @@ IPC = 6 / 6 = 1.000
 - Pipelined:
 IPC = 6 / 11 = 0.545
 
+#### Important Note
+
 The higher CPI and lower IPC of the pipelined implementation in this particular benchmark are primarily attributable to pipeline startup and drain overhead.
 The benchmark contains only six instructions, making pipeline overhead relatively significant.
 However, the pipelined architecture allows multiple instructions to execute concurrently in different stages.
