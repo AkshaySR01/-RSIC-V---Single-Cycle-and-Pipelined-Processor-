@@ -12,3 +12,36 @@ The project consists of two independent implementations:
 
 ### Five-Stage Pipelined Architecture
 <img width="1229" height="620" alt="Pipeline Datapath" src="https://github.com/user-attachments/assets/e860f280-4c5a-44e1-b4c5-a40701b9c078" />
+
+## Implemented Features
+
+### Common Processor Components
+Both implementations contain the fundamental components required for instruction execution:
+Program Counter (PC)
+Instruction Memory
+Instruction Decoder
+Control Unit
+Register File
+Arithmetic Logic Unit (ALU)
+Immediate Generator
+Data Memory
+Multiplexers and supporting datapath logic
+
+### Pipeline-Specific Features
+The five-stage implementation incorporates additional mechanisms required for correct pipelined execution.
+
+#### Data Forwarding
+<img width="1510" height="387" alt="ForwardHazardUnit" src="https://github.com/user-attachments/assets/81d5e418-7469-4571-b601-ad02b928c9d0" />
+
+Forwarding paths allow operands to be obtained from intermediate pipeline stages rather than waiting for their values to be written back into the register file.
+The implementation supports:
+EX/MEM to EX forwarding.
+MEM/WB to EX forwarding.
+This helps resolve data dependencies between consecutive arithmetic instructions without unnecessary pipeline stalls.
+
+#### Load-Use Hazard Detection
+<img width="1167" height="332" alt="LoadHazardUnit" src="https://github.com/user-attachments/assets/df2a9f0b-56d6-4851-8582-4d78f4bb8a0e" />
+
+A load-use dependency occurs when an instruction immediately following a load instruction requires the value being loaded.
+Since the loaded data is not available early enough for the dependent instruction's execution stage, the hazard detection unit introduces a one-cycle stall.
+
