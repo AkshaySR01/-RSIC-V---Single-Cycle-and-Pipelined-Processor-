@@ -17,7 +17,7 @@ The project consists of two independent implementations:
 
 ### Common Processor Components
 Both implementations contain the fundamental components required for instruction execution:
--Program Counter (PC)
+- Program Counter (PC)
 -Instruction Memory
 -Instruction Decoder
 -Control Unit
