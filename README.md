@@ -37,6 +37,7 @@ Forwarding paths allow operands to be obtained from intermediate pipeline stages
 The implementation supports:
 - EX/MEM to EX forwarding.
 - MEM/WB to EX forwarding.
+
 This helps resolve data dependencies between consecutive arithmetic instructions without unnecessary pipeline stalls.
 
 #### Load-Use Hazard Detection
