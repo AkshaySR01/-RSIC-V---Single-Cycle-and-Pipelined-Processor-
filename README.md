@@ -17,15 +17,15 @@ The project consists of two independent implementations:
 
 ### Common Processor Components
 Both implementations contain the fundamental components required for instruction execution:
-Program Counter (PC)
-Instruction Memory
-Instruction Decoder
-Control Unit
-Register File
-Arithmetic Logic Unit (ALU)
-Immediate Generator
-Data Memory
-Multiplexers and supporting datapath logic
+-Program Counter (PC)
+-Instruction Memory
+-Instruction Decoder
+-Control Unit
+-Register File
+-Arithmetic Logic Unit (ALU)
+-Immediate Generator
+-Data Memory
+-Multiplexers and supporting datapath logic
 
 ### Pipeline-Specific Features
 The five-stage implementation incorporates additional mechanisms required for correct pipelined execution.
