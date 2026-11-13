@@ -1,2 +1,1 @@
-# -RSIC-V---Single-Cycle-and-Pipelined-Processor-
-Verilog implementation of a RISC-V processor featuring both Single-Cycle and 5-Stage Pipelined architectures, complete with testbenches, schematics, and performance comparison results.
+Design and RTL Implementation of Single-Cycle and Five-Stage Pipelined RISC-V Processor
