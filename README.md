@@ -35,8 +35,8 @@ The five-stage implementation incorporates additional mechanisms required for co
 
 Forwarding paths allow operands to be obtained from intermediate pipeline stages rather than waiting for their values to be written back into the register file.
 The implementation supports:
-EX/MEM to EX forwarding.
-MEM/WB to EX forwarding.
+- EX/MEM to EX forwarding.
+- MEM/WB to EX forwarding.
 This helps resolve data dependencies between consecutive arithmetic instructions without unnecessary pipeline stalls.
 
 #### Load-Use Hazard Detection
@@ -44,4 +44,5 @@ This helps resolve data dependencies between consecutive arithmetic instructions
 
 A load-use dependency occurs when an instruction immediately following a load instruction requires the value being loaded.
 Since the loaded data is not available early enough for the dependent instruction's execution stage, the hazard detection unit introduces a one-cycle stall.
+Branch and jump control-flow handling is outside the currently implemented and verified feature set.
 
